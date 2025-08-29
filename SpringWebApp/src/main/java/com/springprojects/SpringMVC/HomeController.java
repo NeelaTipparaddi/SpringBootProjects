@@ -1,0 +1,78 @@
+package com.springprojects.SpringMVC;
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class HomeController {
+
+    @ModelAttribute("course")
+    public String course(){
+        return "Java";
+    }
+
+    @RequestMapping("/hi")      //request -> http://localhost:8080/hi
+    public String home(){
+        System.out.println("home method is called");
+        return "index";
+    }
+//    @RequestMapping("addAlien")
+//    public String add(Alien alien){                //ModelAttribute will be done behind the scene
+//        return "result";
+//    }
+
+    @RequestMapping("addAlien")
+    public String add(@ModelAttribute("alien1") Alien alien){            //Using ModelAttribute
+        return "result";
+    }
+
+//    @RequestMapping("addAlien")
+//    public ModelAndView add(@RequestParam("aid") int aid, @RequestParam("aname") String aname, ModelAndView mv){
+//        Alien alien = new Alien();
+//        alien.setAid(aid);
+//        alien.setAname(aname);
+//        mv.addObject("alien", alien);
+//        mv.setViewName("result");
+//        return mv;
+//    }
+
+//    @RequestMapping("add")
+//    public ModelAndView add(int num1, int num2, ModelAndView mv){
+//        int result = num1+num2;
+//        mv.addObject("result", result);                           //Using ModelAndView
+//        mv.setViewName("result");
+//        return mv;
+//    }
+
+//    @RequestMapping("add")
+//    public String add(int num1, int num2, Model model){
+//        int result = num1+num2;                                 //Using Model
+//        model.addAttribute ("result", result);
+//        return "result";
+//    }
+
+
+//    @RequestMapping("add")
+////   public String add(@RequestParam("num1") int num,@RequestParam("num2") int num3, HttpSession session)
+//    public String add(int num1, int num2, HttpSession session){
+//        int result = num1+num2;
+////        int result = num+num3;
+//        session.setAttribute("result", result);
+//        return "result.html";
+//    }
+
+
+//    public String add(HttpServletRequest req, HttpSession session){
+//        int num1 = Integer.parseInt(req.getParameter("num1"));                 (servletway)
+//        int num2 = Integer.parseInt(req.getParameter("num2"));
+//        int result = num1+num2;
+//        session.setAttribute("result", result);
+//        return "result.html";
+//    }
+
+}
