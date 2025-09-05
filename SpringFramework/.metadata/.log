@@ -1,0 +1,1610 @@
+!SESSION 2025-08-25 13:43:17.198 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-25 13:43:22.551
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-25 13:43:42.788
+!MESSAGE Logback config file: C:\Neela\FullStackDev\SpringFramework\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-25 13:43:55.258
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ntipparaddi'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2025-08-25 13:51:03.362
+!MESSAGE Unexpected interrupt while waiting on ECF browse request
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.lang.Object.wait0(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:366)
+	at org.eclipse.core.internal.jobs.Semaphore.acquire(Semaphore.java:45)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:999)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:355)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:531)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.waitOnSelf(FileInfoReader.java:73)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:109)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:124)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:129)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:275)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:427)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:364)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.getLastModified(CacheManager.java:278)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:195)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:69)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:799)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:520)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:161)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:93)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:799)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:520)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$12(MarketplaceCatalog.java:342)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2025-08-25 13:51:04.464
+!MESSAGE Unexpected interrupt while waiting on ECF browse request
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.lang.Object.wait0(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:366)
+	at org.eclipse.core.internal.jobs.Semaphore.acquire(Semaphore.java:45)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:999)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:355)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:531)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.waitOnSelf(FileInfoReader.java:73)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:109)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:124)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:129)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:275)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:427)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:364)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.getLastModified(CacheManager.java:278)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:195)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:69)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:799)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:520)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:161)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:93)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:799)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:520)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$12(MarketplaceCatalog.java:342)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2025-08-25 13:51:04.469
+!MESSAGE Unexpected interrupt while waiting on ECF browse request
+!STACK 0
+java.lang.InterruptedException
+	at org.eclipse.core.internal.jobs.Semaphore.acquire(Semaphore.java:35)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:999)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:355)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:531)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.waitOnSelf(FileInfoReader.java:73)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:109)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:124)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:129)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:275)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:427)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:364)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.getLastModified(CacheManager.java:278)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:195)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:69)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:799)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:520)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:161)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:93)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:799)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:520)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$12(MarketplaceCatalog.java:342)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.epp.mpc.core 1 0 2025-08-25 13:51:31.414
+!MESSAGE Cannot parse XML at URL https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool+4?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:51:31.415
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:51:31.415
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:51:31.415
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:51:31.415
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+
+!ENTRY org.eclipse.equinox.p2.discovery 4 0 2025-08-25 13:51:37.761
+!MESSAGE MarketplaceDiscoveryStrategy failed with an error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool+4?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:195)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	... 15 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2025-08-25 13:51:37.761
+!MESSAGE Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool+4?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:51:37.761
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 3 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:51:37.762
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+
+!ENTRY org.eclipse.epp.mpc.core 1 0 2025-08-25 13:51:53.540
+!MESSAGE Cannot parse XML at URL https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool+4?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:51:53.540
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:51:53.540
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:51:53.540
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:51:53.540
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+
+!ENTRY org.eclipse.equinox.p2.discovery 4 0 2025-08-25 13:52:13.044
+!MESSAGE MarketplaceDiscoveryStrategy failed with an error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool+4?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:195)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	... 15 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2025-08-25 13:52:13.044
+!MESSAGE Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool+4?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:52:13.044
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 3 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:52:13.044
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+
+!ENTRY org.eclipse.epp.mpc.core 1 0 2025-08-25 13:52:25.313
+!MESSAGE Cannot parse XML at URL https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:52:25.313
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:52:25.313
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:52:25.313
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:52:25.313
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+
+!ENTRY org.eclipse.equinox.p2.discovery 4 0 2025-08-25 13:53:37.733
+!MESSAGE MarketplaceDiscoveryStrategy failed with an error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:195)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	... 15 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2025-08-25 13:53:37.733
+!MESSAGE Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:53:37.733
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 3 org.eclipse.epp.mpc.core 1 0 2025-08-25 13:53:37.733
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2025-08-25 13:58:56.430
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at https://download.eclipse.org/justj/jres/21/updates/release/21.0.8/artifacts.xml.xz.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:132)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.getLocalFile(XZedSimpleArtifactRepositoryFactory.java:65)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:42)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:799)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:476)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:157)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:79)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:799)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:200)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactRepositories(ProvisioningContext.java:162)
+	at org.eclipse.equinox.internal.p2.engine.phases.Sizing.completePhase(Sizing.java:98)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:65)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.internal.p2.ui.ProvUI.getSize(ProvUI.java:266)
+	at org.eclipse.equinox.internal.p2.ui.dialogs.SizeComputingWizardPage$1.run(SizeComputingWizardPage.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.hc.client5.http.impl.classic.RequestFailedException: Request aborted
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2025-08-25 13:58:56.432
+!MESSAGE Unable to read repository at https://download.eclipse.org/justj/jres/21/updates/release/21.0.8/artifacts.xml.xz.
+!STACK 0
+org.apache.hc.client5.http.impl.classic.RequestFailedException: Request aborted
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2025-08-25 14:06:28.527
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2025-08-25 14:06:28.527
+!MESSAGE session context was:(profile=epp.package.java, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2025-08-25 14:06:28.527
+!MESSAGE Can't download artifact osgi.bundle,org.eclipse.justj.openjdk.hotspot.jre.full,21.0.8.v20250724-1412 required by org.eclipse.justj.openjdk.hotspot.jre.full[21.0.8.v20250724-1412], org.eclipse.lsp4e[0.18.20.202505071137], toolingwin32.win32.x86_64org.eclipse.equinox.common[4.36.0.20250605-1300], org.eclipse.osgi.compatibility.state[1.2.1200.v20250506-0416], org.eclipse.oomph.setup.ui.questionnaire[1.14.0.v20250518-0704], org.apache.commons.text[1.13.1], org.eclipse.e4.ui.workbench3[0.17.500.v20250508-1247], org.eclipse.oomph.util[1.26.0.v20250502-1242], junit-platform-suite-commons[1.12.2], org.eclipse.mylyn.reviews.core[4.7.0.v20250326-1000], org.eclipse.oomph.p2.core[1.32.0.v20250411-1221], org.eclipse.tm4e.ui[0.14.1.202501131401], org.eclipse.jsch.core[1.5.600.v20250513-1235], org.eclipse.ui.console[3.14.300.v20250509-1251], org.eclipse.ant.ui[3.10.100.v20250514-1721], org.eclipse.buildship.core[3.1.10.v20240802-1613], org.eclipse.mylyn.wikitext.markdown[4.7.0.v20250326-1000], com.ibm.icu[77.1.0], org.eclipse.e4.ui.workbench[1.18.0.v20250423-1201], org.eclipse.mylyn.reviews.ui[4.7.0.v20250326-1000], org.eclipse.ui.ide[3.22.600.v20250523-1502], org.eclipse.emf.edit[2.23.0.v20250330-0741], org.eclipse.pde.runtime[3.8.700.v20250429-2245], org.eclipse.m2e.mavenarchiver[2.1.100.20250418-1315], org.eclipse.ui.themes[1.2.2800.v20250516-0925], org.eclipse.mylyn.wikitext.ant[4.7.0.v20250326-1000], org.eclipse.mylyn.context.ui[4.7.0.v20250326-1000], bcpkix[1.80.0], org.eclipse.mylyn.commons.net[4.7.0.v20250326-1000], biz.aQute.bndlib[7.1.0.202411251545], org.eclipse.platform.doc.user[4.36.0.v20250522-0533], org.eclipse.ui.externaltools[3.6.600.v20250424-1838], com.github.weisj.jsvg[1.7.2], org.eclipse.ecf.provider.filetransfer.httpclient5.win32[1.1.200.v20250122-1953], org.eclipse.epp.package.common[4.36.0.20250605-1300], javax.annotation[1.3.5.v20200909-1856], org.apache.lucene.analysis-common[10.2.1.v20250501-1000], org.eclipse.lsp4j[0.24.0.v20250131-1745], org.eclipse.help.webapp[3.12.100.v20250416-0759], org.eclipse.ui.genericeditor[1.3.600.v20250426-1535], org.eclipse.mylyn.ide.ant[4.7.0.v20250326-1000], org.eclipse.mylyn.commons.notifications.feed[4.7.0.v20250326-1000], org.eclipse.equinox.jsp.jasper[1.2.300.v20250519-0531], org.eclipse.mylyn.github.core[6.8.0.v20250326-1000], org.eclipse.ant.core[3.7.600.v20241215-2025], org.eclipse.text.quicksearch[1.3.100.v20250423-1201], org.eclipse.mylyn.wikitext.textile[4.7.0.v20250326-1000], org.eclipse.mylyn.resources.ui[4.7.0.v20250326-1000], org.eclipse.equinox.frameworkadmin[2.3.400.v20250515-0513], org.eclipse.mylyn.tasks.activity.ui[4.7.0.v20250326-1000], org.eclipse.justj.openjdk.hotspot.jre.full[21.0.8.v20250724-1412], org.eclipse.equinox.p2.jarprocessor[1.3.600.v20250517-0338], org.eclipse.equinox.p2.ui.discovery[1.3.600.v20250520-0605], org.eclipse.e4.ui.di[1.5.600.v20250320-0558], org.eclipse.m2e.editor[2.1.100.20250418-1315], org.eclipse.equinox.p2.director.app[1.3.700.v20250513-0835], org.eclipse.cdt.core.win32[6.1.200.202505191828], org.apache.batik.css[1.19.0.v20250506-1400], org.eclipse.jdt.core.compiler.batch[3.42.0.v20250526-2018], org.eclipse.oomph.jreinfo.ui[1.18.0.v20250131-0848], org.eclipse.ui.navigator.resources[3.9.700.v20250505-0707], org.eclipse.equinox.p2.updatesite[1.3.700.v20250323-0539], org.eclipse.equinox.security.ui[1.4.500.v20250521-0417], org.eclipse.e4.core.commands[1.1.600.v20250307-1331], org.eclipse.m2e.editor.lemminx.bnd[1.0.0.20250208-1755], org.apache.commons.commons-io[2.19.0], org.eclipse.jdt.bcoview[1.3.0.v20250114-1355], org.eclipse.equinox.concurrent[1.3.300.v20250516-0535], org.eclipse.equinox.security[1.4.600.v20250521-0413], org.eclipse.e4.ui.progress[0.4.800.v20250422-1254], org.eclipse.mylyn.wikitext.confluence.ui[4.7.0.v20250326-1000], org.eclipse.jdt[3.19.900.v20250528-1830], org.eclipse.m2e.apt.ui[2.0.600.20250418-1315], org.eclipse.jgit.archive[7.3.0.202506031305-r], org.eclipse.e4.ui.workbench.renderers.swt[0.16.800.v20250519-1609], org.eclipse.mylyn.wikitext.asciidoc.ui[4.7.0.v20250326-1000], org.eclipse.m2e.jdt[2.4.100.20250418-1315], org.eclipse.epp.mpc.ui.css[1.12.1.v20250508-2126], org.eclipse.equinox.p2.ui.sdk.scheduler[1.6.500.v20250520-0551], org.eclipse.m2e.workspace.cli[0.4.0], org.jacoco.agent[0.8.13.202504020838], org.jacoco.core[0.8.13.202504020838], org.eclipse.equinox.p2.discovery.compatibility[1.3.700.v20250516-0530], org.eclipse.oomph.extractor.lib[1.10.0.v20250206-1413], org.apache.lucene.core[10.2.1.v20250501-1000], org.eclipse.compare.win32[1.3.500.v20250513-1235], org.eclipse.ui.forms[3.13.500.v20250519-0741], org.eclipse.oomph.workingsets.editor[1.17.0.v20250218-0822], org.eclipse.mylyn.help.ui[4.7.0.v20250326-1000], org.eclipse.oomph.setup.doc[1.15.0.v20250302-1233], org.eclipse.mylyn.commons.repositories.http.core[4.7.0.v20250326-1000], org.eclipse.jdt.doc.user[3.15.2600.v20250522-0533], org.eclipse.mylyn.commons.repositories.core[4.7.0.v20250326-1000], org.eclipse.equinox.p2.ui.importexport[1.4.700.v20250520-0546], com.sun.jna.platform[5.17.0], org.eclipse.e4.ui.bindings[0.14.600.v20250331-1050], org.eclipse.mylyn.git.core[4.7.0.v20250326-1000], org.eclipse.ui.intro[3.7.600.v20250519-1907], org.eclipse.e4.core.services[2.5.200.v20250326-1945], org.eclipse.equinox.p2.metadata.repository[1.5.600.v20250517-0340], org.eclipse.help.base[4.5.100.v20250528-1830], org.eclipse.mylyn.commons.ui[4.7.0.v20250326-1000], org.eclipse.tm4e.language_pack[0.14.1.202501052236], org.mortbay.jasper.apache-el[9.0.102], org.eclipse.rcp[4.36.0.v20250528-1830], org.apache.lucene.queryparser[10.2.1.v20250501-1000], org.eclipse.e4.ui.workbench.swt[0.17.800.v20250422-1254], org.eclipse.equinox.p2.ui.sdk[1.3.500.v20250521-0421], org.eclipse.tm.terminal.view.core[4.10.500.202505200054], org.eclipse.mylyn.tasks.activity.core[4.7.0.v20250326-1000], org.eclipse.equinox.p2.ui[2.8.800.v20250513-0911], org.eclipse.core.databinding.beans[1.10.400.v20250409-0730], org.eclipse.jetty.session[12.0.21], org.eclipse.mylyn.wikitext.html[4.7.0.v20250326-1000], bcprov[1.80.0], org.eclipse.m2e.core[2.7.2.20250318-1458], org.eclipse.mylyn.builds.core[4.7.0.v20250326-1000], org.eclipse.oomph.jreinfo[1.21.0.v20250228-0749], org.eclipse.epp.package.java[4.36.0.20250605-1300], org.eclipse.mylyn.reviews.edit[4.7.0.v20250326-1000], junit-platform-engine[1.12.2], junit-platform-suite-api[1.12.2], toolingwin32.win32.x86_64org.apache.felix.scr[4.36.0.20250605-1300], org.eclipse.mylyn.java.ui[4.7.0.v20250326-1000], org.eclipse.eclemma.doc[3.1.10.202505212130], toolingwin32.win32.x86_64org.apache.aries.spifly.dynamic.bundle[4.36.0.20250605-1300], org.eclipse.equinox.p2.publisher.eclipse[1.6.500.v20250518-0608], org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64[21.0.8.v20250724-1412], org.eclipse.oomph.setup.sync[1.19.0.v20250509-1106], org.eclipse.tm4e.registry[0.14.1.202412182118], toolingwin32.win32.x86_64org.eclipse.equinox.p2.reconciler.dropins[4.36.0.20250605-1300], org.eclipse.jsch.ui[1.5.700.v20250504-2222], org.joni[2.2.6.v20250329-1000], org.eclipse.equinox.p2.metadata[2.9.400.v20250517-1821], org.eclipse.mylyn.commons.identity.core[4.7.0.v20250326-1000], org.eclipse.jdt.ui[3.35.0.v20250521-0737], org.eclipse.mylyn.debug.ui[4.7.0.v20250326-1000], org.eclipse.tm4e.core[0.14.1.202501141527], org.eclipse.cdt.core.win32.x86_64[12.1.0.202506041907], org.eclipse.ui.ide.application[1.5.700.v20250514-1719], org.eclipse.m2e.profiles.core[2.2.100.20250418-1315], bcutil[1.80.0], org.eclipse.epp.mpc.ui[1.12.1.v20250508-2126], org.eclipse.mylyn.monitor.core[4.7.0.v20250326-1000], org.eclipse.mylyn.wikitext.textile.ui[4.7.0.v20250326-1000], org.eclipse.equinox.simpleconfigurator.manipulator[2.3.500.v20250307-0803], org.eclipse.mylyn.tasks.ui[4.7.0.v20250521-0822], org.eclipse.mylyn.java.tasks[4.7.0.v20250326-1000], org.eclipse.mylyn.wikitext.mediawiki.ui[4.7.0.v20250326-1000], org.eclipse.jetty.ee8.server[12.0.21], org.eclipse.mylyn.tasks.core[4.7.0.v20250326-1000], org.eclipse.buildship.branding[3.1.10.v20240802-1613], junit-platform-commons[1.12.2], org.eclipse.jdt.core.manipulation[1.23.0.v20250521-2253], org.eclipse.egit.doc[7.3.0.202506031305-r], org.snakeyaml.engine[2.9.0], toolingorg.eclipse.equinox.launcher[1.7.0.v20250519-0528], org.eclipse.m2e.core.ui[2.4.0.20250224-0720], org.eclipse.mylyn.commons.xmlrpc[4.7.0.v20250326-1000], org.eclipse.core.runtime[3.33.100.v20250516-0931], org.eclipse.mylyn.wikitext.tracwiki[4.7.0.v20250326-1000], org.eclipse.mylyn.wikitext.context.ui[4.7.0.v20250326-1000], org.eclipse.mylyn.commons.activity.ui[4.7.0.v20250326-1000], org.eclipse.mylyn.wikitext.help.ui[4.7.0.v20250507-1554], org.eclipse.wildwebdeveloper.xml[1.3.7.202501161210], org.eclipse.mylyn.versions.core[4.7.0.v20250326-1000], org.apache.lucene.analysis-smartcn[10.2.1.v20250501-1000], org.eclipse.ui.intro.universal[3.5.500.v20250514-1721], org.eclipse.team.core[3.10.700.v20250313-0656], org.eclipse.oomph.setup.ui[1.34.0.v20250509-1106], slf4j.api[2.0.17], org.jcodings[1.0.63.v20250307-1000], org.eclipse.jface[3.37.0.v20250522-1428], org.eclipse.core.databinding.observable[1.13.400.v20250409-0730], org.eclipse.equinox.p2.extensionlocation[1.5.600.v20250517-0341], org.eclipse.ui.editors[3.20.0.v20250514-1719], org.eclipse.equinox.common[3.20.100.v20250506-0427], toolingorg.eclipse.equinox.launcher.win32.win32.x86_64[1.2.1300.v20250331-1702], org.eclipse.equinox.p2.operations[2.7.600.v20250307-1441], org.eclipse.cdt.core.native[6.4.0.202505200054], org.eclipse.jdt.junit[3.17.100.v20250429-2027], org.eclipse.m2e.launching[2.1.100.20250418-1315], org.eclipse.oomph.setup.edit[1.19.0.v20250422-1311], org.eclipse.core.filesystem[1.11.200.v20250513-1234], org.eclipse.mylyn.wikitext.mediawiki[4.7.0.v20250326-1000], org.eclipse.search[3.17.200.v20250427-1424], org.eclipse.equinox.simpleconfigurator[1.5.500.v20250306-1127], org.eclipse.compare[3.11.400.v20250513-1235], org.eclipse.jdt.launching[3.23.300.v20250401-0654], org.eclipse.equinox.app[1.7.400.v20250515-0510], org.eclipse.mylyn.tasks.index.ui[4.7.0.v20250326-1000], org.eclipse.jdt.junit.runtime[3.7.600.v20250118-1031], org.eclipse.jdt.debug[3.23.0.v20250516-0336], org.eclipse.equinox.p2.artifact.repository[1.5.700.v20250515-0511], org.eclipse.e4.ui.workbench.addons.swt[1.5.700.v20250422-1254], org.apache.httpcomponents.core5.httpcore5-h2[5.3.4.v20250320-1400], org.eclipse.e4.ui.model.workbench[2.4.600.v20250318-1132], org.eclipse.tips.ui[0.3.500.v20241126-1843], net.bytebuddy.byte-buddy-agent[1.17.5], org.eclipse.mylyn.jenkins.ui[4.7.0.v20250326-1000], org.eclipse.eclemma.ui[3.1.10.202505212130], junit-platform-suite-engine[1.12.2], org.eclipse.egit[7.3.0.202506031305-r], org.eclipse.mylyn.monitor.ui[4.7.0.v20250326-1000], org.eclipse.egit.ui[7.3.0.202506031305-r], org.eclipse.jdt.apt.ui[3.8.700.v20250319-0715], org.eclipse.mylyn.context.core[4.7.0.v20250326-1000], org.eclipse.equinox.http.servlet[1.8.400.v20250317-0606], org.eclipse.mylyn.tasks.search[4.7.0.v20250326-1000], org.eclipse.ltk.core.refactoring[3.15.0.v20241206-0650], org.eclipse.equinox.p2.touchpoint.eclipse[2.4.500.v20250317-0609], org.eclipse.mylyn.commons.core[4.7.0.v20250326-1000], org.eclipse.e4.core.di.extensions.supplier[0.17.800.v20250331-0742], org.eclipse.jetty.io[12.0.21], toolingwin32.win32.x86_64org.eclipse.core.runtime[4.36.0.20250605-1300], org.eclipse.equinox.launcher[1.7.0.v20250519-0528], org.eclipse.m2e.model.edit[2.0.700.20250418-1315], org.eclipse.egit.core[7.3.0.202506031305-r], org.eclipse.m2e.sourcelookup.ui[2.1.100.20250418-1315], org.jsoup[1.20.1], org.eclipse.eclemma.core[3.1.10.202505212130], org.eclipse.jgit[7.3.0.202506031305-r], org.eclipse.swt[3.130.0.v20250528-1759], org.eclipse.mylyn.wikitext.osgi[4.7.0.v20250326-1000], org.glassfish.hk2.osgi-resource-locator[1.0.4], org.apache.commons.commons-collections4[4.5.0], org.eclipse.lemminx.uber-jar[0.31.0], org.osgi.service.repository[1.1.0.201505202024], org.eclipse.mylyn.egit.ui[4.7.0.v20250326-1000], org.eclipse.mylyn.wikitext.tracwiki.ui[4.7.0.v20250326-1000], toolingwin32.win32.x86_64org.eclipse.equinox.simpleconfigurator[4.36.0.20250605-1300], org.eclipse.osgi[3.23.100.v20250514-1759], bcpg[1.80.0], org.eclipse.mylyn.wikitext.markdown.ui[4.7.0.v20250326-1000], org.eclipse.m2e.jdt.ui[2.1.100.20250418-1315], org.eclipse.osgi.util[3.7.400.v20250516-0916], org.eclipse.e4.emf.xpath[0.6.0.v20250215-1931], org.eclipse.equinox.p2.core[2.13.100.v20250317-0903], org.eclipse.update.configurator[3.5.700.v20250512-0645], org.eclipse.m2e.binaryproject[2.2.100.20250418-1315], org.eclipse.core.commands[3.12.400.v20250312-0643], org.eclipse.e4.ui.css.swt[0.15.600.v20250409-1135], junit-jupiter-engine[5.12.2], org.apache.sshd.sftp[2.15.0], org.eclipse.epp.mpc.core.win32[1.12.1.v20250508-2126], org.eclipse.ui.workbench[3.135.100.v20250517-0909], org.eclipse.emf.ecore[2.39.0.v20250401-0947], org.eclipse.m2e.refactoring[2.1.100.20250418-1315], org.eclipse.mylyn.git.ui[4.7.0.v20250326-1000], org.eclipse.mylyn.wikitext.twiki[4.7.0.v20250326-1000], org.eclipse.emf.common[2.42.0.v20250401-0947], junit-jupiter-migrationsupport[5.12.2], org.eclipse.justj.epp[21.0.0.v20250724-1739], org.eclipse.emf.common.ui[2.25.0.v20250329-0911], org.eclipse.mylyn.commons.notifications.ui[4.7.0.v20250326-1000], com.google.gson[2.13.1], org.eclipse.emf.edit.ui[2.26.0.v20250405-0811], org.eclipse.equinox.p2.updatechecker[1.4.500.v20250307-0711], org.eclipse.m2e.editor.lemminx[2.0.900.20250514-0352], org.eclipse.mylyn.commons.notifications.core[4.7.0.v20250326-1000], toolingwin32.win32.x86_64org.eclipse.equinox.event[4.36.0.20250605-1300], org.eclipse.mylyn.wikitext.asciidoc[4.7.0.v20250326-1000], org.eclipse.equinox.p2.directorywatcher[1.4.600.v20250516-0531], org.eclipse.jface.text[3.28.0.v20250520-1938], junit-platform-runner[1.12.2], org.apache.tika.core[2.9.4], org.eclipse.oomph.ui[1.25.0.v20250411-1221], org.eclipse.jetty.ee8.servlet[12.0.21], com.sun.jna[5.17.0.v20250316-1700], org.eclipse.equinox.p2.console[1.3.700.v20250515-0507], org.eclipse.debug.ui[3.18.800.v20250514-1721], org.eclipse.mylyn.tasks.bugs[4.7.0.v20250326-1000], junit-jupiter-api[5.12.2], org.eclipse.ant.launching[1.4.700.v20250120-0913], org.eclipse.mylyn.github.doc[6.8.0.v20250326-1000], org.eclipse.emf.ecore.xmi[2.39.0.v20250414-1351], org.jacoco.report[0.8.13.202504020838], org.eclipse.core.filebuffers[3.8.400.v20250108-1526], org.eclipse.text[3.14.300.v20250119-1501], org.apache.commons.commons-logging[1.3.5], org.apache.xmlgraphics[2.11.0.v20250506-1400], org.eclipse.jgit.ssh.apache.agent[7.3.0.202506031305-r], org.eclipse.equinox.p2.repository[2.9.400.v20250519-0535], org.eclipse.oomph.preferences[1.15.0.v20250411-0846], org.eclipse.ui[3.207.200.v20250519-1609], org.eclipse.ecf.provider.filetransfer.httpclientjava[2.1.0.v20250108-1923], org.eclipse.equinox.http.service.api[1.2.102.v20250520-0629], org.eclipse.jetty.security[12.0.21], org.eclipse.core.resources[3.22.200.v20250513-1234], org.eclipse.platform[4.36.0.v20250528-1830], org.apache.httpcomponents.client5.httpclient5[5.4.4.v20250501-1000], org.eclipse.ui.workbench.texteditor[3.19.200.v20250514-1719], junit-vintage-engine[5.12.2], org.eclipse.jgit.http.apache[7.3.0.202506031305-r], org.eclipse.equinox.launcher.win32.win32.x86_64[1.2.1300.v20250331-1702], org.eclipse.oomph.setup[1.32.0.v20250521-1019], org.eclipse.ui.browser[3.8.500.v20250514-1719], org.eclipse.tm.terminal.connector.ssh[4.8.500.202506041901], biz.aQute.bnd.util[7.1.0.202411251545], org.objectweb.asm.commons[9.8.0], org.gradle.toolingapi[8.9.0.v20240802-1613], org.eclipse.oomph.setup.p2[1.22.0.v20250302-1233], org.eclipse.ui.views.log[1.4.800.v20250426-1716], org.eclipse.equinox.http.registry[1.4.300.v20250518-0606], junit-platform-launcher[1.12.2], org.eclipse.ecf.provider.filetransfer[3.3.100.v20250115-0406], org.eclipse.equinox.frameworkadmin.equinox[1.3.400.v20250515-0513], org.mortbay.jasper.apache-jsp[9.0.102], org.apache.batik.i18n[1.19.0.v20250506-1400], org.eclipse.jdt.core[3.42.0.v20250523-0728], org.eclipse.buildship.compat[3.1.10.v20240802-1613], org.eclipse.equinox.registry[3.12.400.v20250505-2005], org.eclipse.buildship.ui[3.1.10.v20240802-1613], org.eclipse.equinox.http.jetty[3.9.400.v20250518-0608], com.evolvedbinary.thirdparty.org.apache.xmlrpc.xmlrpc-client[5.0.0], org.eclipse.core.net[1.5.700.v20250313-0656], org.eclipse.equinox.p2.director[2.6.700.v20250513-1040], org.eclipse.equinox.p2.reconciler.dropins[1.5.600.v20250518-0617], org.eclipse.equinox.p2.repository.tools[2.4.700.v20250518-0616], org.eclipse.m2e.sourcelookup[2.1.100.20250418-1315], org.eclipse.mylyn.commons.identity.ui[4.7.0.v20250326-1000], org.eclipse.jetty.server[12.0.21], org.eclipse.jetty.util[12.0.21], org.eclipse.m2e.discovery[2.1.100.20250418-1315], org.eclipse.oomph.setup.editor[1.31.0.v20250509-1106], org.apache.lucene.queries[10.2.1.v20250501-1000], org.eclipse.equinox.event[1.7.300.v20250518-0609], org.eclipse.mylyn.commons.screenshots[4.7.0.v20250326-1000], com.google.guava[33.4.8.jre], org.eclipse.mylyn.jenkins.core[4.7.0.v20250326-1000], org.apache.sshd.osgi[2.15.0], org.eclipse.compare.core[3.8.700.v20250120-0641], org.eclipse.epp.mpc.help.ui[1.12.1.v20250508-2126], org.eclipse.tm.terminal.view.ui[4.11.700.202506041901], org.eclipse.debug.core[3.23.0.v20250509-1924], org.eclipse.equinox.bidi[1.5.300.v20250515-0503], org.eclipse.jgit.gpg.bc[7.3.0.202506031305-r], org.eclipse.tm.terminal.connector.telnet[4.8.300.202506041901], org.objectweb.asm.tree[9.8.0], org.eclipse.mylyn.wikitext.twiki.ui[4.7.0.v20250326-1000], org.apache.lucene.facet[10.2.1.v20250501-1000], org.eclipse.mylyn.tasks.index.core[4.7.0.v20250326-1000], org.eclipse.e4.ui.dialogs[1.6.100.v20250422-1254], org.apache.batik.util[1.19.0.v20250506-1400], org.eclipse.e4.core.di[1.9.600.v20250501-1140], org.eclipse.jface.notifications[0.7.400.v20250426-1415], epp.package.java[4.36.0.20250605-1300], org.eclipse.mylyn.builds.ui[4.7.0.v20250326-1000], org.eclipse.equinox.p2.garbagecollector[1.3.600.v20250323-0538], org.eclipse.jetty.ee8.security[12.0.21], org.eclipse.m2e.maven.runtime[3.9.900.20250220-2013], org.eclipse.mylyn.ide.ui[4.7.0.v20250326-1000], org.objectweb.asm.tree.analysis[9.8.0], org.eclipse.ecf[3.13.0.v20250304-2338], org.eclipse.equinox.preferences[3.11.400.v20250520-0549], org.eclipse.jdt.debug.ui[3.15.0.v20250516-0336], org.eclipse.equinox.p2.publisher[1.9.500.v20250518-0605], org.eclipse.m2e.logback[2.7.100.20250418-1315], org.objectweb.asm.util[9.8.0], org.eclipse.equinox.console[1.4.1000.v20250518-0610], org.eclipse.m2e.apt.core[2.3.100.20250418-1315], org.eclipse.ecf.discovery[5.3.0.v20241230-2050], org.eclipse.mylyn.wikitext[4.7.0.v20250326-1000], org.eclipse.mylyn.commons.repositories.ui[4.7.0.v20250326-1000], org.eclipse.tm4e.markdown[0.14.1.202412182118], org.eclipse.team.ui[3.11.100.v20250509-1307], org.eclipse.mylyn.wikitext.confluence[4.7.0.v20250326-1000], org.apache.httpcomponents.core5.httpcore5[5.3.4.v20250320-1400], org.eclipse.mylyn.wikitext.ui[4.7.0.v20250513-1805], org.eclipse.equinox.p2.engine[2.10.500.v20250516-0523], org.eclipse.m2e.scm[2.1.100.20250418-1315], org.eclipse.mylyn.versions.ui[4.7.0.v20250326-1000], org.eclipse.equinox.p2.touchpoint.natives[1.5.600.v20250519-0525], org.objectweb.asm[9.8.0], org.eclipse.equinox.p2.discovery[1.3.600.v20250516-0521], org.eclipse.mylyn.github.ui[6.8.0.v20250326-1000], org.eclipse.e4.ui.css.swt.theme[0.14.500.v20250213-1508], org.eclipse.mylyn.context.tasks.ui[4.7.0.v20250326-1000], org.eclipse.equinox.p2.transport.ecf[1.4.500.v20250519-0547], org.eclipse.jdt.junit.core[3.13.500.v20250108-1123], org.eclipse.swt.win32.win32.x86_64[3.130.0.v20250528-1759], org.eclipse.ui.views[3.12.600.v20250426-1716], org.eclipse.ltk.ui.refactoring[3.13.600.v20250528-2229], ch.qos.logback.core[1.5.18], org.eclipse.e4.ui.services[1.6.500.v20250123-0754], org.eclipse.oomph.setup.core[1.34.0.v20250509-1106], org.eclipse.mylyn.team.ui[4.7.0.v20250326-1000], org.eclipse.help.ui[4.8.100.v20250514-0729], junit-jupiter-params[5.12.2], org.eclipse.core.databinding.property[1.10.400.v20250409-0730], org.eclipse.jgit.ssh.apache[7.3.0.202506031305-r], org.eclipse.core.jobs[3.15.600.v20250513-1234], org.eclipse.ui.cheatsheets[3.8.600.v20250509-1307], org.eclipse.core.databinding[1.13.500.v20250409-0730], org.eclipse.lsp4j.jsonrpc[0.24.0.v20250131-1745], org.apache.batik.constants[1.19.0.v20250506-1400], org.eclipse.e4.core.contexts[1.13.100.v20250122-1647], org.eclipse.epp.mpc.core[1.12.1.v20250508-2126], org.eclipse.m2e.profiles.ui[2.1.100.20250418-1315], org.eclipse.ecf.provider.filetransfer.httpclient5[1.1.100.v20250108-1923], org.eclipse.help[3.10.500.v20250423-1201], org.eclipse.ui.navigator[3.13.100.v20250426-1709], org.eclipse.tm.terminal.connector.local[4.8.300.202506041901], org.eclipse.m2e.binaryproject.ui[2.1.100.20250418-1315], org.eclipse.tm4e.languageconfiguration[0.14.1.202501071849], com.google.guava.failureaccess[1.0.3], org.eclipse.mylyn.commons.workbench[4.7.0.v20250326-1000], org.eclipse.equinox.jsp.jasper.registry[1.3.200.v20250519-0534], org.apache.lucene.sandbox[10.2.1.v20250501-1000], org.eclipse.mylyn.wikitext.tasks.ui[4.7.0.v20250326-1000], org.eclipse.tm.terminal.control[5.6.0.v20250507-0541], org.eclipse.debug.ui.launchview[1.1.800.v20250514-1721], org.eclipse.tm.terminal.connector.process[4.9.300.202506041901], org.eclipse.swt.svg[3.130.0.v20250501-0805], org.eclipse.jetty.http[12.0.21], org.eclipse.wst.common.emf[1.2.800.v202503020719] from any of the following repositories: 
+file:/C:/Users/ntipparaddi/Downloads/eclipse-java-2024-12-R-win32-x86_64/eclipse/configuration/org.eclipse.osgi/211/data/listener_1925729951/
+file:/C:/Users/ntipparaddi/Downloads/eclipse-java-2024-12-R-win32-x86_64/eclipse/p2/org.eclipse.equinox.p2.core/cache/
+file:/C:/Users/ntipparaddi/Downloads/eclipse-java-2024-12-R-win32-x86_64/eclipse/
+https://download.eclipse.org/buildship/updates/e410/releases/3.x
+https://testng.org/testng-p2-update-site
+http://testng.org/testng-p2-update-site/
+http://download.eclipse.org/usssdk/updates/release/latest
+https://download.eclipse.org/technology/m2e/releases/latest
+https://download.eclipse.org/releases/2024-12
+https://download.eclipse.org/lsp4j/updates/releases/0.24.0
+https://download.eclipse.org/wildwebdeveloper/releases/1.3.10
+https://download.eclipse.org/eclipse/updates/4.35
+https://download.eclipse.org/egit/updates-7.3
+https://download.eclipse.org/tm4e/releases/0.14.1
+https://download.eclipse.org/webtools/downloads/drops/R3.37.0/R-3.37.0-20250303081219/repository
+https://download.eclipse.org/modeling/emf/emf/builds/release/2.42.0
+https://download.eclipse.org/technology/epp/packages/latest/
+https://download.eclipse.org/releases/latest
+https://testng.org/testng-eclipse-update-site
+https://download.eclipse.org/eclipse/updates/4.34
+https://download.eclipse.org/justj/epp/release/latest
+https://download.eclipse.org/lsp4e/releases/0.27.4
+https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/release/4.36.0
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2025-08-25 14:06:28.528
+!MESSAGE Can't download artifact osgi.bundle,org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64,21.0.8.v20250724-1412 required by org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64[21.0.8.v20250724-1412], org.eclipse.lsp4e[0.18.20.202505071137], toolingwin32.win32.x86_64org.eclipse.equinox.common[4.36.0.20250605-1300], org.eclipse.osgi.compatibility.state[1.2.1200.v20250506-0416], ch.qos.logback.classic[1.5.18], org.eclipse.oomph.setup.ui.questionnaire[1.14.0.v20250518-0704], org.apache.commons.text[1.13.1], org.eclipse.e4.ui.workbench3[0.17.500.v20250508-1247], org.eclipse.oomph.util[1.26.0.v20250502-1242], junit-platform-suite-commons[1.12.2], org.eclipse.mylyn.reviews.core[4.7.0.v20250326-1000], org.eclipse.oomph.p2.core[1.32.0.v20250411-1221], org.eclipse.tm4e.ui[0.14.1.202501131401], org.eclipse.jsch.core[1.5.600.v20250513-1235], org.eclipse.ui.console[3.14.300.v20250509-1251], org.eclipse.ant.ui[3.10.100.v20250514-1721], org.eclipse.buildship.core[3.1.10.v20240802-1613], org.eclipse.mylyn.wikitext.markdown[4.7.0.v20250326-1000], com.ibm.icu[77.1.0], org.eclipse.e4.ui.workbench[1.18.0.v20250423-1201], org.eclipse.mylyn.reviews.ui[4.7.0.v20250326-1000], org.eclipse.ui.ide[3.22.600.v20250523-1502], org.eclipse.emf.edit[2.23.0.v20250330-0741], org.eclipse.pde.runtime[3.8.700.v20250429-2245], org.eclipse.m2e.mavenarchiver[2.1.100.20250418-1315], org.eclipse.ui.themes[1.2.2800.v20250516-0925], org.eclipse.mylyn.wikitext.ant[4.7.0.v20250326-1000], org.eclipse.mylyn.context.ui[4.7.0.v20250326-1000], bcpkix[1.80.0], org.eclipse.mylyn.commons.net[4.7.0.v20250326-1000], biz.aQute.bndlib[7.1.0.202411251545], org.eclipse.platform.doc.user[4.36.0.v20250522-0533], org.eclipse.ui.externaltools[3.6.600.v20250424-1838], com.github.weisj.jsvg[1.7.2], org.eclipse.ecf.provider.filetransfer.httpclient5.win32[1.1.200.v20250122-1953], org.eclipse.epp.package.common[4.36.0.20250605-1300], javax.annotation[1.3.5.v20200909-1856], org.apache.lucene.analysis-common[10.2.1.v20250501-1000], org.eclipse.lsp4j[0.24.0.v20250131-1745], org.eclipse.help.webapp[3.12.100.v20250416-0759], org.eclipse.ui.genericeditor[1.3.600.v20250426-1535], org.eclipse.mylyn.ide.ant[4.7.0.v20250326-1000], org.eclipse.mylyn.commons.notifications.feed[4.7.0.v20250326-1000], org.eclipse.equinox.jsp.jasper[1.2.300.v20250519-0531], org.eclipse.mylyn.github.core[6.8.0.v20250326-1000], org.eclipse.ant.core[3.7.600.v20241215-2025], org.eclipse.text.quicksearch[1.3.100.v20250423-1201], org.eclipse.mylyn.wikitext.textile[4.7.0.v20250326-1000], org.eclipse.mylyn.resources.ui[4.7.0.v20250326-1000], org.eclipse.equinox.frameworkadmin[2.3.400.v20250515-0513], org.eclipse.mylyn.tasks.activity.ui[4.7.0.v20250326-1000], org.eclipse.justj.openjdk.hotspot.jre.full[21.0.8.v20250724-1412], org.eclipse.equinox.p2.jarprocessor[1.3.600.v20250517-0338], org.eclipse.equinox.p2.ui.discovery[1.3.600.v20250520-0605], org.eclipse.e4.ui.di[1.5.600.v20250320-0558], org.eclipse.m2e.editor[2.1.100.20250418-1315], org.eclipse.equinox.p2.director.app[1.3.700.v20250513-0835], org.eclipse.cdt.core.win32[6.1.200.202505191828], org.apache.batik.css[1.19.0.v20250506-1400], org.eclipse.jdt.core.compiler.batch[3.42.0.v20250526-2018], org.eclipse.oomph.jreinfo.ui[1.18.0.v20250131-0848], org.eclipse.ui.navigator.resources[3.9.700.v20250505-0707], org.eclipse.equinox.p2.updatesite[1.3.700.v20250323-0539], org.eclipse.equinox.security.ui[1.4.500.v20250521-0417], org.eclipse.e4.core.commands[1.1.600.v20250307-1331], org.eclipse.m2e.editor.lemminx.bnd[1.0.0.20250208-1755], org.apache.commons.commons-io[2.19.0], org.eclipse.jdt.bcoview[1.3.0.v20250114-1355], org.eclipse.equinox.concurrent[1.3.300.v20250516-0535], org.eclipse.equinox.security[1.4.600.v20250521-0413], org.eclipse.e4.ui.progress[0.4.800.v20250422-1254], org.eclipse.mylyn.wikitext.confluence.ui[4.7.0.v20250326-1000], org.eclipse.jdt[3.19.900.v20250528-1830], org.eclipse.m2e.apt.ui[2.0.600.20250418-1315], org.eclipse.jgit.archive[7.3.0.202506031305-r], org.eclipse.e4.ui.workbench.renderers.swt[0.16.800.v20250519-1609], org.eclipse.mylyn.wikitext.asciidoc.ui[4.7.0.v20250326-1000], org.eclipse.m2e.jdt[2.4.100.20250418-1315], org.eclipse.epp.mpc.ui.css[1.12.1.v20250508-2126], org.eclipse.equinox.p2.ui.sdk.scheduler[1.6.500.v20250520-0551], org.eclipse.m2e.workspace.cli[0.4.0], org.jacoco.agent[0.8.13.202504020838], org.jacoco.core[0.8.13.202504020838], org.eclipse.equinox.p2.discovery.compatibility[1.3.700.v20250516-0530], org.eclipse.oomph.extractor.lib[1.10.0.v20250206-1413], org.apache.lucene.core[10.2.1.v20250501-1000], org.eclipse.compare.win32[1.3.500.v20250513-1235], org.eclipse.ui.forms[3.13.500.v20250519-0741], org.eclipse.oomph.workingsets.editor[1.17.0.v20250218-0822], org.eclipse.mylyn.help.ui[4.7.0.v20250326-1000], org.eclipse.oomph.setup.doc[1.15.0.v20250302-1233], org.eclipse.mylyn.commons.repositories.http.core[4.7.0.v20250326-1000], org.eclipse.jdt.doc.user[3.15.2600.v20250522-0533], org.eclipse.mylyn.commons.repositories.core[4.7.0.v20250326-1000], org.eclipse.equinox.p2.ui.importexport[1.4.700.v20250520-0546], com.sun.jna.platform[5.17.0], org.eclipse.e4.ui.bindings[0.14.600.v20250331-1050], org.eclipse.mylyn.git.core[4.7.0.v20250326-1000], org.eclipse.ui.intro[3.7.600.v20250519-1907], org.eclipse.e4.core.services[2.5.200.v20250326-1945], org.eclipse.equinox.p2.metadata.repository[1.5.600.v20250517-0340], org.eclipse.help.base[4.5.100.v20250528-1830], org.eclipse.mylyn.commons.ui[4.7.0.v20250326-1000], org.eclipse.tm4e.language_pack[0.14.1.202501052236], org.mortbay.jasper.apache-el[9.0.102], org.eclipse.rcp[4.36.0.v20250528-1830], org.apache.lucene.queryparser[10.2.1.v20250501-1000], org.eclipse.e4.ui.workbench.swt[0.17.800.v20250422-1254], org.eclipse.equinox.p2.ui.sdk[1.3.500.v20250521-0421], org.eclipse.tm.terminal.view.core[4.10.500.202505200054], org.eclipse.mylyn.tasks.activity.core[4.7.0.v20250326-1000], org.eclipse.equinox.p2.ui[2.8.800.v20250513-0911], org.eclipse.core.databinding.beans[1.10.400.v20250409-0730], org.eclipse.jetty.session[12.0.21], org.eclipse.mylyn.wikitext.html[4.7.0.v20250326-1000], bcprov[1.80.0], org.eclipse.m2e.core[2.7.2.20250318-1458], org.eclipse.mylyn.builds.core[4.7.0.v20250326-1000], org.eclipse.oomph.jreinfo[1.21.0.v20250228-0749], org.eclipse.epp.package.java[4.36.0.20250605-1300], org.eclipse.mylyn.reviews.edit[4.7.0.v20250326-1000], junit-platform-engine[1.12.2], junit-platform-suite-api[1.12.2], toolingwin32.win32.x86_64org.apache.felix.scr[4.36.0.20250605-1300], org.eclipse.mylyn.java.ui[4.7.0.v20250326-1000], org.eclipse.eclemma.doc[3.1.10.202505212130], toolingwin32.win32.x86_64org.apache.aries.spifly.dynamic.bundle[4.36.0.20250605-1300], org.eclipse.equinox.p2.publisher.eclipse[1.6.500.v20250518-0608], org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64[21.0.8.v20250724-1412], org.eclipse.oomph.setup.sync[1.19.0.v20250509-1106], org.eclipse.tm4e.registry[0.14.1.202412182118], toolingwin32.win32.x86_64org.eclipse.equinox.p2.reconciler.dropins[4.36.0.20250605-1300], org.eclipse.jsch.ui[1.5.700.v20250504-2222], org.joni[2.2.6.v20250329-1000], org.eclipse.equinox.p2.metadata[2.9.400.v20250517-1821], org.eclipse.mylyn.commons.identity.core[4.7.0.v20250326-1000], org.eclipse.jdt.ui[3.35.0.v20250521-0737], org.eclipse.mylyn.debug.ui[4.7.0.v20250326-1000], org.eclipse.tm4e.core[0.14.1.202501141527], org.eclipse.cdt.core.win32.x86_64[12.1.0.202506041907], org.eclipse.ui.ide.application[1.5.700.v20250514-1719], org.eclipse.m2e.profiles.core[2.2.100.20250418-1315], bcutil[1.80.0], org.eclipse.epp.mpc.ui[1.12.1.v20250508-2126], org.eclipse.mylyn.monitor.core[4.7.0.v20250326-1000], org.eclipse.mylyn.wikitext.textile.ui[4.7.0.v20250326-1000], org.eclipse.equinox.simpleconfigurator.manipulator[2.3.500.v20250307-0803], org.eclipse.mylyn.tasks.ui[4.7.0.v20250521-0822], org.eclipse.mylyn.java.tasks[4.7.0.v20250326-1000], org.eclipse.mylyn.wikitext.mediawiki.ui[4.7.0.v20250326-1000], org.eclipse.jetty.ee8.server[12.0.21], org.eclipse.mylyn.tasks.core[4.7.0.v20250326-1000], org.eclipse.buildship.branding[3.1.10.v20240802-1613], junit-platform-commons[1.12.2], org.eclipse.jdt.core.manipulation[1.23.0.v20250521-2253], org.eclipse.egit.doc[7.3.0.202506031305-r], org.snakeyaml.engine[2.9.0], toolingorg.eclipse.equinox.launcher[1.7.0.v20250519-0528], org.eclipse.m2e.core.ui[2.4.0.20250224-0720], org.eclipse.mylyn.commons.xmlrpc[4.7.0.v20250326-1000], org.eclipse.core.runtime[3.33.100.v20250516-0931], org.eclipse.mylyn.wikitext.tracwiki[4.7.0.v20250326-1000], org.eclipse.mylyn.wikitext.context.ui[4.7.0.v20250326-1000], org.eclipse.mylyn.commons.activity.ui[4.7.0.v20250326-1000], org.eclipse.mylyn.wikitext.help.ui[4.7.0.v20250507-1554], org.eclipse.wildwebdeveloper.xml[1.3.7.202501161210], org.eclipse.mylyn.versions.core[4.7.0.v20250326-1000], org.apache.lucene.analysis-smartcn[10.2.1.v20250501-1000], org.eclipse.ui.intro.universal[3.5.500.v20250514-1721], org.eclipse.team.core[3.10.700.v20250313-0656], org.eclipse.oomph.setup.ui[1.34.0.v20250509-1106], slf4j.api[2.0.17], org.jcodings[1.0.63.v20250307-1000], org.eclipse.jface[3.37.0.v20250522-1428], org.eclipse.core.databinding.observable[1.13.400.v20250409-0730], org.eclipse.equinox.p2.extensionlocation[1.5.600.v20250517-0341], org.eclipse.ui.editors[3.20.0.v20250514-1719], org.eclipse.equinox.common[3.20.100.v20250506-0427], toolingorg.eclipse.equinox.launcher.win32.win32.x86_64[1.2.1300.v20250331-1702], org.eclipse.equinox.p2.operations[2.7.600.v20250307-1441], org.eclipse.cdt.core.native[6.4.0.202505200054], org.eclipse.jdt.junit[3.17.100.v20250429-2027], org.eclipse.m2e.launching[2.1.100.20250418-1315], org.eclipse.oomph.setup.edit[1.19.0.v20250422-1311], org.eclipse.core.filesystem[1.11.200.v20250513-1234], org.eclipse.mylyn.wikitext.mediawiki[4.7.0.v20250326-1000], org.eclipse.search[3.17.200.v20250427-1424], org.eclipse.equinox.simpleconfigurator[1.5.500.v20250306-1127], org.eclipse.compare[3.11.400.v20250513-1235], org.eclipse.jdt.launching[3.23.300.v20250401-0654], org.eclipse.equinox.app[1.7.400.v20250515-0510], org.eclipse.mylyn.tasks.index.ui[4.7.0.v20250326-1000], org.eclipse.jdt.junit.runtime[3.7.600.v20250118-1031], org.eclipse.jdt.debug[3.23.0.v20250516-0336], org.eclipse.equinox.p2.artifact.repository[1.5.700.v20250515-0511], org.eclipse.e4.ui.workbench.addons.swt[1.5.700.v20250422-1254], org.apache.httpcomponents.core5.httpcore5-h2[5.3.4.v20250320-1400], org.eclipse.e4.ui.model.workbench[2.4.600.v20250318-1132], org.eclipse.tips.ui[0.3.500.v20241126-1843], net.bytebuddy.byte-buddy-agent[1.17.5], org.eclipse.mylyn.jenkins.ui[4.7.0.v20250326-1000], org.eclipse.eclemma.ui[3.1.10.202505212130], junit-platform-suite-engine[1.12.2], org.eclipse.egit[7.3.0.202506031305-r], org.eclipse.mylyn.monitor.ui[4.7.0.v20250326-1000], org.eclipse.egit.ui[7.3.0.202506031305-r], org.eclipse.jdt.apt.ui[3.8.700.v20250319-0715], org.eclipse.mylyn.context.core[4.7.0.v20250326-1000], org.eclipse.equinox.http.servlet[1.8.400.v20250317-0606], org.eclipse.mylyn.tasks.search[4.7.0.v20250326-1000], org.eclipse.ltk.core.refactoring[3.15.0.v20241206-0650], org.eclipse.equinox.p2.touchpoint.eclipse[2.4.500.v20250317-0609], org.eclipse.mylyn.commons.core[4.7.0.v20250326-1000], org.eclipse.e4.core.di.extensions.supplier[0.17.800.v20250331-0742], org.eclipse.jetty.io[12.0.21], toolingwin32.win32.x86_64org.eclipse.core.runtime[4.36.0.20250605-1300], org.eclipse.equinox.launcher[1.7.0.v20250519-0528], org.eclipse.m2e.model.edit[2.0.700.20250418-1315], org.eclipse.egit.core[7.3.0.202506031305-r], org.eclipse.m2e.sourcelookup.ui[2.1.100.20250418-1315], org.jsoup[1.20.1], org.eclipse.eclemma.core[3.1.10.202505212130], org.eclipse.jgit[7.3.0.202506031305-r], org.eclipse.swt[3.130.0.v20250528-1759], org.eclipse.mylyn.wikitext.osgi[4.7.0.v20250326-1000], org.glassfish.hk2.osgi-resource-locator[1.0.4], org.apache.commons.commons-collections4[4.5.0], org.eclipse.lemminx.uber-jar[0.31.0], org.osgi.service.repository[1.1.0.201505202024], org.eclipse.mylyn.egit.ui[4.7.0.v20250326-1000], org.eclipse.mylyn.wikitext.tracwiki.ui[4.7.0.v20250326-1000], toolingwin32.win32.x86_64org.eclipse.equinox.simpleconfigurator[4.36.0.20250605-1300], org.eclipse.osgi[3.23.100.v20250514-1759], bcpg[1.80.0], org.eclipse.mylyn.wikitext.markdown.ui[4.7.0.v20250326-1000], org.eclipse.m2e.jdt.ui[2.1.100.20250418-1315], org.eclipse.osgi.util[3.7.400.v20250516-0916], org.eclipse.e4.emf.xpath[0.6.0.v20250215-1931], org.eclipse.equinox.p2.core[2.13.100.v20250317-0903], org.eclipse.update.configurator[3.5.700.v20250512-0645], org.eclipse.m2e.binaryproject[2.2.100.20250418-1315], org.eclipse.core.commands[3.12.400.v20250312-0643], org.eclipse.e4.ui.css.swt[0.15.600.v20250409-1135], junit-jupiter-engine[5.12.2], org.apache.sshd.sftp[2.15.0], org.eclipse.epp.mpc.core.win32[1.12.1.v20250508-2126], org.eclipse.ui.workbench[3.135.100.v20250517-0909], org.eclipse.emf.ecore[2.39.0.v20250401-0947], org.eclipse.m2e.refactoring[2.1.100.20250418-1315], org.eclipse.mylyn.git.ui[4.7.0.v20250326-1000], org.eclipse.mylyn.wikitext.twiki[4.7.0.v20250326-1000], org.eclipse.emf.common[2.42.0.v20250401-0947], junit-jupiter-migrationsupport[5.12.2], org.eclipse.justj.epp[21.0.0.v20250724-1739], org.eclipse.emf.common.ui[2.25.0.v20250329-0911], org.eclipse.mylyn.commons.notifications.ui[4.7.0.v20250326-1000], com.google.gson[2.13.1], org.eclipse.emf.edit.ui[2.26.0.v20250405-0811], org.eclipse.equinox.p2.updatechecker[1.4.500.v20250307-0711], org.eclipse.m2e.editor.lemminx[2.0.900.20250514-0352], org.eclipse.mylyn.commons.notifications.core[4.7.0.v20250326-1000], toolingwin32.win32.x86_64org.eclipse.equinox.event[4.36.0.20250605-1300], org.eclipse.mylyn.wikitext.asciidoc[4.7.0.v20250326-1000], org.eclipse.equinox.p2.directorywatcher[1.4.600.v20250516-0531], org.eclipse.jface.text[3.28.0.v20250520-1938], junit-platform-runner[1.12.2], org.apache.tika.core[2.9.4], org.eclipse.oomph.ui[1.25.0.v20250411-1221], org.eclipse.jetty.ee8.servlet[12.0.21], com.sun.jna[5.17.0.v20250316-1700], org.eclipse.equinox.p2.console[1.3.700.v20250515-0507], org.eclipse.debug.ui[3.18.800.v20250514-1721], org.eclipse.mylyn.tasks.bugs[4.7.0.v20250326-1000], junit-jupiter-api[5.12.2], org.eclipse.ant.launching[1.4.700.v20250120-0913], org.eclipse.mylyn.github.doc[6.8.0.v20250326-1000], org.eclipse.emf.ecore.xmi[2.39.0.v20250414-1351], org.jacoco.report[0.8.13.202504020838], org.eclipse.core.filebuffers[3.8.400.v20250108-1526], org.eclipse.text[3.14.300.v20250119-1501], org.apache.commons.commons-logging[1.3.5], org.apache.xmlgraphics[2.11.0.v20250506-1400], org.eclipse.jgit.ssh.apache.agent[7.3.0.202506031305-r], org.eclipse.equinox.p2.repository[2.9.400.v20250519-0535], org.eclipse.oomph.preferences[1.15.0.v20250411-0846], org.eclipse.ui[3.207.200.v20250519-1609], org.eclipse.ecf.provider.filetransfer.httpclientjava[2.1.0.v20250108-1923], org.eclipse.equinox.http.service.api[1.2.102.v20250520-0629], org.eclipse.jetty.security[12.0.21], org.eclipse.core.resources[3.22.200.v20250513-1234], org.eclipse.platform[4.36.0.v20250528-1830], org.apache.httpcomponents.client5.httpclient5[5.4.4.v20250501-1000], org.eclipse.ui.workbench.texteditor[3.19.200.v20250514-1719], junit-vintage-engine[5.12.2], org.eclipse.jgit.http.apache[7.3.0.202506031305-r], org.eclipse.equinox.launcher.win32.win32.x86_64[1.2.1300.v20250331-1702], org.eclipse.oomph.setup[1.32.0.v20250521-1019], org.eclipse.ui.browser[3.8.500.v20250514-1719], org.eclipse.tm.terminal.connector.ssh[4.8.500.202506041901], biz.aQute.bnd.util[7.1.0.202411251545], org.objectweb.asm.commons[9.8.0], org.gradle.toolingapi[8.9.0.v20240802-1613], org.eclipse.oomph.setup.p2[1.22.0.v20250302-1233], org.eclipse.ui.views.log[1.4.800.v20250426-1716], org.eclipse.equinox.http.registry[1.4.300.v20250518-0606], junit-platform-launcher[1.12.2], org.eclipse.ecf.provider.filetransfer[3.3.100.v20250115-0406], org.eclipse.equinox.frameworkadmin.equinox[1.3.400.v20250515-0513], org.mortbay.jasper.apache-jsp[9.0.102], org.apache.batik.i18n[1.19.0.v20250506-1400], org.eclipse.jdt.core[3.42.0.v20250523-0728], org.eclipse.buildship.compat[3.1.10.v20240802-1613], org.eclipse.equinox.registry[3.12.400.v20250505-2005], org.eclipse.buildship.ui[3.1.10.v20240802-1613], org.eclipse.equinox.http.jetty[3.9.400.v20250518-0608], com.evolvedbinary.thirdparty.org.apache.xmlrpc.xmlrpc-client[5.0.0], org.eclipse.core.net[1.5.700.v20250313-0656], org.eclipse.equinox.p2.director[2.6.700.v20250513-1040], org.eclipse.equinox.p2.reconciler.dropins[1.5.600.v20250518-0617], org.eclipse.equinox.p2.repository.tools[2.4.700.v20250518-0616], org.eclipse.m2e.sourcelookup[2.1.100.20250418-1315], org.eclipse.mylyn.commons.identity.ui[4.7.0.v20250326-1000], org.eclipse.jetty.server[12.0.21], org.eclipse.jetty.util[12.0.21], org.eclipse.m2e.discovery[2.1.100.20250418-1315], org.eclipse.oomph.setup.editor[1.31.0.v20250509-1106], org.apache.lucene.queries[10.2.1.v20250501-1000], org.eclipse.equinox.event[1.7.300.v20250518-0609], org.eclipse.mylyn.commons.screenshots[4.7.0.v20250326-1000], com.google.guava[33.4.8.jre], org.eclipse.mylyn.jenkins.core[4.7.0.v20250326-1000], org.apache.sshd.osgi[2.15.0], org.eclipse.compare.core[3.8.700.v20250120-0641], org.eclipse.epp.mpc.help.ui[1.12.1.v20250508-2126], org.eclipse.tm.terminal.view.ui[4.11.700.202506041901], org.eclipse.debug.core[3.23.0.v20250509-1924], org.eclipse.equinox.bidi[1.5.300.v20250515-0503], org.eclipse.jgit.gpg.bc[7.3.0.202506031305-r], org.eclipse.tm.terminal.connector.telnet[4.8.300.202506041901], org.objectweb.asm.tree[9.8.0], org.eclipse.mylyn.wikitext.twiki.ui[4.7.0.v20250326-1000], org.apache.lucene.facet[10.2.1.v20250501-1000], org.eclipse.mylyn.tasks.index.core[4.7.0.v20250326-1000], org.eclipse.e4.ui.dialogs[1.6.100.v20250422-1254], org.apache.batik.util[1.19.0.v20250506-1400], org.eclipse.e4.core.di[1.9.600.v20250501-1140], org.eclipse.jface.notifications[0.7.400.v20250426-1415], epp.package.java[4.36.0.20250605-1300], org.eclipse.mylyn.builds.ui[4.7.0.v20250326-1000], org.eclipse.equinox.p2.garbagecollector[1.3.600.v20250323-0538], org.eclipse.jetty.ee8.security[12.0.21], org.eclipse.m2e.maven.runtime[3.9.900.20250220-2013], org.eclipse.mylyn.ide.ui[4.7.0.v20250326-1000], org.objectweb.asm.tree.analysis[9.8.0], org.eclipse.ecf[3.13.0.v20250304-2338], org.eclipse.equinox.preferences[3.11.400.v20250520-0549], org.eclipse.jdt.debug.ui[3.15.0.v20250516-0336], org.eclipse.equinox.p2.publisher[1.9.500.v20250518-0605], org.eclipse.m2e.logback[2.7.100.20250418-1315], org.objectweb.asm.util[9.8.0], org.eclipse.equinox.console[1.4.1000.v20250518-0610], org.eclipse.m2e.apt.core[2.3.100.20250418-1315], org.eclipse.ecf.discovery[5.3.0.v20241230-2050], org.eclipse.mylyn.wikitext[4.7.0.v20250326-1000], org.eclipse.mylyn.commons.repositories.ui[4.7.0.v20250326-1000], org.eclipse.tm4e.markdown[0.14.1.202412182118], org.eclipse.team.ui[3.11.100.v20250509-1307], org.eclipse.mylyn.wikitext.confluence[4.7.0.v20250326-1000], org.apache.httpcomponents.core5.httpcore5[5.3.4.v20250320-1400], org.eclipse.mylyn.wikitext.ui[4.7.0.v20250513-1805], org.eclipse.equinox.p2.engine[2.10.500.v20250516-0523], org.eclipse.m2e.scm[2.1.100.20250418-1315], org.eclipse.mylyn.versions.ui[4.7.0.v20250326-1000], org.eclipse.equinox.p2.touchpoint.natives[1.5.600.v20250519-0525], org.objectweb.asm[9.8.0], org.eclipse.equinox.p2.discovery[1.3.600.v20250516-0521], org.eclipse.mylyn.github.ui[6.8.0.v20250326-1000], org.eclipse.e4.ui.css.swt.theme[0.14.500.v20250213-1508], org.eclipse.mylyn.context.tasks.ui[4.7.0.v20250326-1000], org.eclipse.equinox.p2.transport.ecf[1.4.500.v20250519-0547], org.eclipse.jdt.junit.core[3.13.500.v20250108-1123], org.eclipse.swt.win32.win32.x86_64[3.130.0.v20250528-1759], org.eclipse.ui.views[3.12.600.v20250426-1716], org.eclipse.ltk.ui.refactoring[3.13.600.v20250528-2229], ch.qos.logback.core[1.5.18], org.eclipse.e4.ui.services[1.6.500.v20250123-0754], org.eclipse.oomph.setup.core[1.34.0.v20250509-1106], org.eclipse.mylyn.team.ui[4.7.0.v20250326-1000], org.eclipse.help.ui[4.8.100.v20250514-0729], junit-jupiter-params[5.12.2], org.eclipse.core.databinding.property[1.10.400.v20250409-0730], org.eclipse.jgit.ssh.apache[7.3.0.202506031305-r], org.eclipse.core.jobs[3.15.600.v20250513-1234], org.eclipse.ui.cheatsheets[3.8.600.v20250509-1307], org.eclipse.core.databinding[1.13.500.v20250409-0730], org.eclipse.lsp4j.jsonrpc[0.24.0.v20250131-1745], org.apache.batik.constants[1.19.0.v20250506-1400], org.eclipse.e4.core.contexts[1.13.100.v20250122-1647], org.eclipse.epp.mpc.core[1.12.1.v20250508-2126], org.eclipse.m2e.profiles.ui[2.1.100.20250418-1315], org.eclipse.ecf.provider.filetransfer.httpclient5[1.1.100.v20250108-1923], org.eclipse.help[3.10.500.v20250423-1201], org.eclipse.ui.navigator[3.13.100.v20250426-1709], org.eclipse.tm.terminal.connector.local[4.8.300.202506041901], org.eclipse.m2e.binaryproject.ui[2.1.100.20250418-1315], org.eclipse.tm4e.languageconfiguration[0.14.1.202501071849], com.google.guava.failureaccess[1.0.3], org.eclipse.mylyn.commons.workbench[4.7.0.v20250326-1000], org.eclipse.equinox.jsp.jasper.registry[1.3.200.v20250519-0534], org.apache.lucene.sandbox[10.2.1.v20250501-1000], org.eclipse.mylyn.wikitext.tasks.ui[4.7.0.v20250326-1000], org.eclipse.tm.terminal.control[5.6.0.v20250507-0541], org.eclipse.debug.ui.launchview[1.1.800.v20250514-1721], org.eclipse.tm.terminal.connector.process[4.9.300.202506041901], org.eclipse.swt.svg[3.130.0.v20250501-0805], org.eclipse.jetty.http[12.0.21], org.eclipse.wst.common.emf[1.2.800.v202503020719] from any of the following repositories: 
+file:/C:/Users/ntipparaddi/Downloads/eclipse-java-2024-12-R-win32-x86_64/eclipse/configuration/org.eclipse.osgi/211/data/listener_1925729951/
+file:/C:/Users/ntipparaddi/Downloads/eclipse-java-2024-12-R-win32-x86_64/eclipse/p2/org.eclipse.equinox.p2.core/cache/
+file:/C:/Users/ntipparaddi/Downloads/eclipse-java-2024-12-R-win32-x86_64/eclipse/
+https://download.eclipse.org/buildship/updates/e410/releases/3.x
+https://testng.org/testng-p2-update-site
+http://testng.org/testng-p2-update-site/
+http://download.eclipse.org/usssdk/updates/release/latest
+https://download.eclipse.org/technology/m2e/releases/latest
+https://download.eclipse.org/releases/2024-12
+https://download.eclipse.org/lsp4j/updates/releases/0.24.0
+https://download.eclipse.org/wildwebdeveloper/releases/1.3.10
+https://download.eclipse.org/eclipse/updates/4.35
+https://download.eclipse.org/egit/updates-7.3
+https://download.eclipse.org/tm4e/releases/0.14.1
+https://download.eclipse.org/webtools/downloads/drops/R3.37.0/R-3.37.0-20250303081219/repository
+https://download.eclipse.org/modeling/emf/emf/builds/release/2.42.0
+https://download.eclipse.org/technology/epp/packages/latest/
+https://download.eclipse.org/releases/latest
+https://testng.org/testng-eclipse-update-site
+https://download.eclipse.org/eclipse/updates/4.34
+https://download.eclipse.org/justj/epp/release/latest
+https://download.eclipse.org/lsp4e/releases/0.27.4
+https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/release/4.36.0
+
+!ENTRY org.eclipse.epp.mpc.core 1 0 2025-08-25 16:14:34.420
+!MESSAGE Cannot parse XML at URL https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool+4?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:14:34.421
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:14:34.422
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:14:34.422
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:14:34.422
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+
+!ENTRY org.eclipse.equinox.p2.discovery 4 0 2025-08-25 16:14:37.708
+!MESSAGE MarketplaceDiscoveryStrategy failed with an error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool+4?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:195)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	... 15 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2025-08-25 16:14:37.708
+!MESSAGE Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool+4?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:14:37.708
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 3 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:14:37.708
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool 4" url="https://marketplace.eclipse.org/search/spring%20tool%204">
+
+
+!ENTRY org.eclipse.epp.mpc.core 1 0 2025-08-25 16:14:57.609
+!MESSAGE Cannot parse XML at URL https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:14:57.612
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:14:57.612
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:14:57.612
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:14:57.612
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+
+!ENTRY org.eclipse.equinox.p2.discovery 4 0 2025-08-25 16:15:00.290
+!MESSAGE MarketplaceDiscoveryStrategy failed with an error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:195)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	... 15 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2025-08-25 16:15:00.290
+!MESSAGE Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:15:00.291
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 3 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:15:00.291
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+
+!ENTRY org.eclipse.epp.mpc.core 1 0 2025-08-25 16:17:52.839
+!MESSAGE Cannot parse XML at URL https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:17:52.841
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:17:52.841
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:17:52.841
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:17:52.841
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+
+!ENTRY org.eclipse.equinox.p2.discovery 4 0 2025-08-25 16:17:55.856
+!MESSAGE MarketplaceDiscoveryStrategy failed with an error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:195)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	... 15 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2025-08-25 16:17:55.857
+!MESSAGE Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/spring+tool?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.34: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:17:55.857
+!MESSAGE Invalid response content: An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 428; columnNumber: 13; An invalid XML character (Unicode: 0xdf89) was found in the CDATA section.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:413)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:306)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:539)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:529)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:488)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:704)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 3 org.eclipse.epp.mpc.core 1 0 2025-08-25 16:17:55.857
+!MESSAGE Received response begins with:
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <marketplace>
+3:   <search count="8" term="spring tool" url="https://marketplace.eclipse.org/search/spring%20tool">
+
+!SESSION 2025-08-25 16:21:37.524 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/C:/Neela/FullStackDev/SpringFramework/
+
+!ENTRY org.eclipse.eclemma.core 4 0 2025-08-25 16:21:43.614
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.eclemma.core [154]
+  Unresolved requirement: Require-Bundle: org.jacoco.agent; bundle-version="[0.8.12,0.8.13)"
+    -> Bundle-SymbolicName: org.jacoco.agent; bundle-version="0.8.12.202403310830"
+       org.jacoco.agent [488]
+         No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.jacoco.core; bundle-version="[0.8.12,0.8.13)"
+    -> Bundle-SymbolicName: org.jacoco.core; bundle-version="0.8.12.202403310830"
+       org.jacoco.core [489]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[9.7.0,9.8.0)"
+           -> Export-Package: org.objectweb.asm; bundle-symbolic-name="org.objectweb.asm"; bundle-version="9.7.1"; version="9.7.1"
+              org.objectweb.asm [499]
+                No resolution report for the bundle.         Unresolved requirement: Import-Package: org.objectweb.asm.tree; version="[9.7.0,9.8.0)"
+           -> Export-Package: org.objectweb.asm.tree; bundle-symbolic-name="org.objectweb.asm.tree"; bundle-version="9.7.1"; version="9.7.1"; uses:="org.objectweb.asm,org.objectweb.asm.signature"
+              org.objectweb.asm.tree [501]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="9.7.1"
+                  -> Export-Package: org.objectweb.asm; bundle-symbolic-name="org.objectweb.asm"; bundle-version="9.7.1"; version="9.7.1"
+                Unresolved requirement: Import-Package: org.objectweb.asm.signature; version="9.7.1"
+                  -> Export-Package: org.objectweb.asm.signature; bundle-symbolic-name="org.objectweb.asm"; bundle-version="9.7.1"; version="9.7.1"
+  Unresolved requirement: Require-Bundle: org.jacoco.report; bundle-version="[0.8.12,0.8.13)"
+    -> Bundle-SymbolicName: org.jacoco.report; bundle-version="0.8.12.202403310830"
+       org.jacoco.report [490]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[9.7.0,9.8.0)"
+           -> Export-Package: org.objectweb.asm; bundle-symbolic-name="org.objectweb.asm"; bundle-version="9.7.1"; version="9.7.1"
+         Unresolved requirement: Import-Package: org.jacoco.core.data; version="[0.8.12,0.8.13)"
+           -> Export-Package: org.jacoco.core.data; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"; uses:="org.jacoco.core.internal.data"
+         Unresolved requirement: Import-Package: org.jacoco.core.runtime; version="[0.8.12,0.8.13)"
+           -> Export-Package: org.jacoco.core.runtime; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"; uses:="org.jacoco.core.data,org.objectweb.asm"
+         Unresolved requirement: Import-Package: org.jacoco.core; version="[0.8.12,0.8.13)"
+           -> Export-Package: org.jacoco.core; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"
+         Unresolved requirement: Import-Package: org.jacoco.core.analysis; version="[0.8.12,0.8.13)"
+           -> Export-Package: org.jacoco.core.analysis; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"; uses:="org.jacoco.core.data,org.jacoco.core.internal.analysis"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.jacoco.core [osgi.identity; type="osgi.bundle"; version:Version="0.8.12.202403310830"; osgi.identity="org.jacoco.core"] because it is exposed to package 'org.objectweb.asm' from resources org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.7.1"; osgi.identity="org.objectweb.asm"] and org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.8.0"; osgi.identity="org.objectweb.asm"] via two dependency chains.
+
+Chain 1:
+  org.jacoco.core [osgi.identity; type="osgi.bundle"; version:Version="0.8.12.202403310830"; osgi.identity="org.jacoco.core"]
+    import: (&(osgi.wiring.package=org.objectweb.asm)(&(version>=9.7.0)(!(version>=9.8.0))))
+     |
+    export: osgi.wiring.package: org.objectweb.asm
+  org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.7.1"; osgi.identity="org.objectweb.asm"]
+
+Chain 2:
+  org.jacoco.core [osgi.identity; type="osgi.bundle"; version:Version="0.8.12.202403310830"; osgi.identity="org.jacoco.core"]
+    import: (&(osgi.wiring.package=org.objectweb.asm.commons)(&(version>=9.7.0)(!(version>=9.8.0))))
+     |
+    export: osgi.wiring.package=org.objectweb.asm.commons; uses:=org.objectweb.asm
+  org.objectweb.asm.commons [osgi.identity; type="osgi.bundle"; version:Version="9.7.1"; osgi.identity="org.objectweb.asm.commons"]
+    import: (&(osgi.wiring.package=org.objectweb.asm)(version>=9.7.1))
+     |
+    export: osgi.wiring.package: org.objectweb.asm
+  org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.8.0"; osgi.identity="org.objectweb.asm"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2102)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2093)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2033)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1996)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1912)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.eclemma.ui 4 0 2025-08-25 16:21:43.623
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.eclemma.ui [156]
+  Unresolved requirement: Require-Bundle: org.jacoco.core; bundle-version="[0.8.12,0.8.13)"
+    -> Bundle-SymbolicName: org.jacoco.core; bundle-version="0.8.12.202403310830"
+       org.jacoco.core [489]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[9.7.0,9.8.0)"
+           -> Export-Package: org.objectweb.asm; bundle-symbolic-name="org.objectweb.asm"; bundle-version="9.7.1"; version="9.7.1"
+              org.objectweb.asm [499]
+                No resolution report for the bundle.         Unresolved requirement: Import-Package: org.objectweb.asm.tree; version="[9.7.0,9.8.0)"
+           -> Export-Package: org.objectweb.asm.tree; bundle-symbolic-name="org.objectweb.asm.tree"; bundle-version="9.7.1"; version="9.7.1"; uses:="org.objectweb.asm,org.objectweb.asm.signature"
+              org.objectweb.asm.tree [501]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="9.7.1"
+                  -> Export-Package: org.objectweb.asm; bundle-symbolic-name="org.objectweb.asm"; bundle-version="9.7.1"; version="9.7.1"
+                Unresolved requirement: Import-Package: org.objectweb.asm.signature; version="9.7.1"
+                  -> Export-Package: org.objectweb.asm.signature; bundle-symbolic-name="org.objectweb.asm"; bundle-version="9.7.1"; version="9.7.1"
+  Unresolved requirement: Require-Bundle: org.eclipse.eclemma.core
+    -> Bundle-SymbolicName: org.eclipse.eclemma.core; bundle-version="3.1.9.202405260028"; singleton:="true"
+       org.eclipse.eclemma.core [154]
+         Unresolved requirement: Require-Bundle: org.jacoco.agent; bundle-version="[0.8.12,0.8.13)"
+           -> Bundle-SymbolicName: org.jacoco.agent; bundle-version="0.8.12.202403310830"
+              org.jacoco.agent [488]
+                No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.jacoco.core; bundle-version="[0.8.12,0.8.13)"
+           -> Bundle-SymbolicName: org.jacoco.core; bundle-version="0.8.12.202403310830"
+         Unresolved requirement: Require-Bundle: org.jacoco.report; bundle-version="[0.8.12,0.8.13)"
+           -> Bundle-SymbolicName: org.jacoco.report; bundle-version="0.8.12.202403310830"
+              org.jacoco.report [490]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="[9.7.0,9.8.0)"
+                  -> Export-Package: org.objectweb.asm; bundle-symbolic-name="org.objectweb.asm"; bundle-version="9.7.1"; version="9.7.1"
+                Unresolved requirement: Import-Package: org.jacoco.core.data; version="[0.8.12,0.8.13)"
+                  -> Export-Package: org.jacoco.core.data; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"; uses:="org.jacoco.core.internal.data"
+                Unresolved requirement: Import-Package: org.jacoco.core.runtime; version="[0.8.12,0.8.13)"
+                  -> Export-Package: org.jacoco.core.runtime; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"; uses:="org.jacoco.core.data,org.objectweb.asm"
+                Unresolved requirement: Import-Package: org.jacoco.core; version="[0.8.12,0.8.13)"
+                  -> Export-Package: org.jacoco.core; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"
+                Unresolved requirement: Import-Package: org.jacoco.core.analysis; version="[0.8.12,0.8.13)"
+                  -> Export-Package: org.jacoco.core.analysis; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"; uses:="org.jacoco.core.data,org.jacoco.core.internal.analysis"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.jacoco.core [osgi.identity; type="osgi.bundle"; version:Version="0.8.12.202403310830"; osgi.identity="org.jacoco.core"] because it is exposed to package 'org.objectweb.asm' from resources org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.7.1"; osgi.identity="org.objectweb.asm"] and org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.8.0"; osgi.identity="org.objectweb.asm"] via two dependency chains.
+
+Chain 1:
+  org.jacoco.core [osgi.identity; type="osgi.bundle"; version:Version="0.8.12.202403310830"; osgi.identity="org.jacoco.core"]
+    import: (&(osgi.wiring.package=org.objectweb.asm)(&(version>=9.7.0)(!(version>=9.8.0))))
+     |
+    export: osgi.wiring.package: org.objectweb.asm
+  org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.7.1"; osgi.identity="org.objectweb.asm"]
+
+Chain 2:
+  org.jacoco.core [osgi.identity; type="osgi.bundle"; version:Version="0.8.12.202403310830"; osgi.identity="org.jacoco.core"]
+    import: (&(osgi.wiring.package=org.objectweb.asm.commons)(&(version>=9.7.0)(!(version>=9.8.0))))
+     |
+    export: osgi.wiring.package=org.objectweb.asm.commons; uses:=org.objectweb.asm
+  org.objectweb.asm.commons [osgi.identity; type="osgi.bundle"; version:Version="9.7.1"; osgi.identity="org.objectweb.asm.commons"]
+    import: (&(osgi.wiring.package=org.objectweb.asm)(version>=9.7.1))
+     |
+    export: osgi.wiring.package: org.objectweb.asm
+  org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.8.0"; osgi.identity="org.objectweb.asm"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2102)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2093)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2033)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1996)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1912)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-25 16:21:43.955
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.equinox.app 0 0 2025-08-25 16:21:48.539
+!MESSAGE Product org.eclipse.epp.package.java.product could not be found.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-25 16:21:54.352
+!MESSAGE Logback config file: C:\Neela\FullStackDev\SpringFramework\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-08-25 16:21:55.020
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-25 16:21:55.020
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-08-25 16:21:55.366
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-25 16:21:55.366
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-25 16:22:00.114
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ntipparaddi'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2025-08-25 16:22:00.184
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.eclemma.ui.CoverageView" id and the "Coverage" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-08-25 16:31:51.403
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.jface 2 0 2025-08-25 16:31:52.598
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-25 16:31:52.598
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)

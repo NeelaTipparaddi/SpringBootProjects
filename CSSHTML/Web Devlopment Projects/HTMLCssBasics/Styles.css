@@ -1,0 +1,18 @@
+.flag{
+    width: 500px;
+    height: 100px;
+    background-color: orange;
+    }
+    p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    position: absolute;
+    left : 50%;
+    }
+
+.Circle{
+    width: 900px;
+    height: 600px;
+    background-color: white;
+}

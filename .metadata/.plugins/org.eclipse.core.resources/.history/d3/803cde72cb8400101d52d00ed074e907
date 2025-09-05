@@ -1,0 +1,11 @@
+<%@ page language="java" %>
+<html>
+<head>
+    <title>Result Page</title>
+</head>
+<body>
+    <h2>Alien Details</h2>
+    <p>Id: ${alien.aid}</p>
+    <p>Name: ${alien.aname}</p>
+</body>
+</html>
